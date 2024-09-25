@@ -1,13 +1,8 @@
 ﻿using DemoUnitTest;
+using DemoUnitTest.Bank;
 
 
 Calcul calcul = new Calcul();
-try
-{
-    Console.WriteLine(calcul.Addition(int.MaxValue, 10));
+Console.WriteLine(calcul.Division(5,0));
 
-}
-catch(Exception ex)
-{
-    Console.WriteLine("Une erreur s'est produite ");
-}
+IBankService s = new BankService();
